@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "TrailConnect",
+    "slug": "trailconnect",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "scheme": "trailconnect",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.trailconnect.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "TrailConnect uses your location to track hikes and show friends' locations.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "TrailConnect uses your location to track hikes and share with emergency contacts.",
+        "NSCameraUsageDescription": "TrailConnect uses your camera to capture trail photos and scan QR codes.",
+        "NSPhotoLibraryUsageDescription": "TrailConnect uses your photos to share hiking experiences."
+      }
+    },
+    "android": {
+      "package": "com.trailconnect.app",
+      "permissions": [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "edgeToEdgeEnabled": true
+    },
+    "plugins": [
+      "expo-router",
+      "expo-location",
+      "expo-image-picker",
+      "expo-camera",
+      "expo-font",
+      "expo-notifications"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "82b1379f-349c-4f9c-98b4-863afb0e7e4c"
+      }
+    },
+    "owner": "meyms"
+  }
+}
